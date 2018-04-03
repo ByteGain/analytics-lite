@@ -1,8 +1,8 @@
 {
-  "name": "bg-analytics-core",
+  "name": "@bytegain/bg-analytics-core",
   "author": "Bytegain <hello@ByteGain.com>",
   "version": "3.2.6",
-  "description": "The minimal, hassle-free way to integrate analytics into any web application.",
+  "description": "Fork of the minimal, hassle-free way to integrate analytics into any web application.",
   "keywords": [
     "analytics",
     "analytics.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ByteGain/bg-analytics-core"
+    "url": "git+https://github.com/ByteGain/bg-analytics-core.git"
   },
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
@@ -85,5 +85,9 @@
     "watchify": "^3.7.0",
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
