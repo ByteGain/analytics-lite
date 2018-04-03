@@ -60,6 +60,7 @@
     "@segment/analytics.js-integration": "^3.2.0",
     "@segment/eslint-config": "^3.1.1",
     "babel-eslint": "^8.0.3",
+    "babel-preset-es2015": "^6.24.1",
     "browserify": "13.0.0",
     "compat-trigger-event": "^1.0.0",
     "component-each": "^0.2.6",
