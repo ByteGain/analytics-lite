@@ -1,9 +1,10 @@
 'use strict';
 
-var assert = require('proclaim');
-var rawCookie = require('component-cookie');
-var sinon = require('sinon');
-var analytics = require('../lib');
+import assert from 'proclaim';
+import rawCookie from 'component-cookie';
+import sinon from 'sinon';
+import analytics from '../lib';
+
 var Analytics = require('../lib').constructor;
 
 var cookie = Analytics.cookie;

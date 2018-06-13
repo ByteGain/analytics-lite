@@ -1,6 +1,7 @@
 'use strict';
 
-var assert = require('proclaim');
+import assert from 'proclaim';
+
 var memory = require('../lib').constructor.memory;
 
 describe('memory', function() {

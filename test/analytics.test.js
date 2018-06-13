@@ -1,18 +1,19 @@
 'use strict';
 
+import Facade from 'segmentio-facade';
+import assert from 'proclaim';
+import createIntegration from '@segment/analytics.js-integration';
+import extend from '@ndhoule/extend';
+import type from 'component-type';
+import jQuery from 'jquery';
+import sinon from 'sinon';
+import tick from 'next-tick';
+import trigger from 'compat-trigger-event';
+import analytics from '../lib';
+import pageDefaults from '../lib/pageDefaults';
+
+import { bind } from 'component-event';
 var Analytics = require('../lib').constructor;
-var Facade = require('segmentio-facade');
-var analytics = require('../lib');
-var assert = require('proclaim');
-var bind = require('component-event').bind;
-var createIntegration = require('@segment/analytics.js-integration');
-var extend = require('@ndhoule/extend');
-var type = require('component-type');
-var jQuery = require('jquery');
-var pageDefaults = require('../lib/pageDefaults');
-var sinon = require('sinon');
-var tick = require('next-tick');
-var trigger = require('compat-trigger-event');
 
 var Identify = Facade.Identify;
 var cookie = Analytics.cookie;

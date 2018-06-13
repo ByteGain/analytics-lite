@@ -1,9 +1,10 @@
 'use strict';
 
+import analytics from '../lib';
+import assert from 'proclaim';
+import sinon from 'sinon';
+
 var Analytics = require('../lib').constructor;
-var analytics = require('../lib');
-var assert = require('proclaim');
-var sinon = require('sinon');
 
 var cookie = Analytics.cookie;
 var group = analytics.group();

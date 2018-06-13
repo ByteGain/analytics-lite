@@ -1,6 +1,7 @@
 'use strict';
 
-var assert = require('proclaim');
+import assert from 'proclaim';
+
 var cookie = require('../lib').constructor.cookie;
 
 describe('cookie', function() {

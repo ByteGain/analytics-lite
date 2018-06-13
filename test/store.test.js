@@ -1,7 +1,7 @@
 'use strict';
 
-var assert = require('proclaim');
 var store = require('../lib').constructor.store;
+import assert from 'proclaim';
 
 describe('store', function() {
   afterEach(function() {

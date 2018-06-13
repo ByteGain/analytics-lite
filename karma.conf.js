@@ -17,7 +17,7 @@ module.exports = function(config) {
     reporters: ['spec'/* , 'coverage' */],
 
     preprocessors: {
-      'test/**/*.js': 'browserify'
+      'test/**/*.js': ['browserify']
     },
 
     client: {
@@ -27,27 +27,10 @@ module.exports = function(config) {
     },
 
     browserify: {
-      debug: true
-      // Edge and Safari 9 still panic with coverage. Keeping disabled.
-      // transform: [
-      //   [
-      //     'browserify-istanbul',
-      //     {
-      //       instrumenterConfig: {
-      //         embedSource: true
-      //       }
-      //     }
-      //   ]
-      // ]
+      debug: true,
+      transform: [
+        [ 'babelify', {presets: ['env']} ]
+      ]
     }
-
-    // Edge and Safari 9 still panic with coverage. Keeping disabled.
-    // coverageReporter: {
-    //   reporters: [
-    //     { type: 'text' },
-    //     { type: 'html' },
-    //     { type: 'json' }
-    //   ]
-    // }
   });
 };
